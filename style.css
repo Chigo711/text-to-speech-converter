@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("images/stop-watch-bg.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 4rem 4%;
+}
+
+.hero__title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+
+.hero__title span {
+  color: #c50d08;
+}
+
+#text {
+  width: 60%;
+  height: 16.5rem;
+  background: #103588;
+  color: #fff;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#text::placeholder {
+  color: #fff;
+}
+
+.row {
+  /* width: 37.5rem; */
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  background: #c50d08;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.5rem 1.8rem;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.play {
+  width: 1rem;
+  margin-right: 10px;
+}
+
+#select {
+  flex: 1;
+  color: #fff;
+  background: #103588;
+  height: 3.1rem;
+  max-width: 300px;
+  padding: 0 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  appearance: none;
+  background-image: url(images/down-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 11px;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  #text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .row {
+    flex-direction: column;
+  }
+  #select {
+    max-width: 380px;
+    padding: 1rem 1.5rem;
+    appearance: block;
+  }
+}
